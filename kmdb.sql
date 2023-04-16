@@ -174,7 +174,7 @@ VALUES ("Warner Bros","Batman Begins",1),
 SELECT movies.title, movies.year_released, movies.rating, studios.name
 FROM movies
 INNER JOIN studios ON movies.id = studios.movie_id
-
+;
 
 -- Prints a header for the cast output
 .print ""
@@ -188,3 +188,4 @@ INNER JOIN studios ON movies.id = studios.movie_id
 SELECT movies.title, actors.name, actors.character
 FROM movies
 INNER JOIN actors ON movies.id = actors.movie_id
+;
